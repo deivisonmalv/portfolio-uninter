@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PORTFÓLIO - portfolio-deivison</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <a class="logo" href="index.html">Deivison Moreira Alves</a>
+      <nav class="menu">
+        <a href="sobre.html">Sobre</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <section>
+      <h1>Contato</h1>
+      <form id="form-contato" novalidate>
+        <label>Seu nome<br><input type="text" id="nome" name="nome" placeholder="Seu nome"></label>
+        <label>Seu email<br><input type="email" id="email" name="email" placeholder="seuemail@dominio.com"></label>
+        <label>Digite sua mensagem.<br><textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea></label>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="msg-retorno" class="msg" aria-live="polite" hidden></div>
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <div class="container">
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

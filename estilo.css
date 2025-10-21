@@ -1,0 +1,18 @@
+/* estilo.css - Simples e tradicional */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { font-family: Arial, Helvetica, sans-serif; background: #ffffff; color: #111; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.topo { background: #f0f0f0; border-bottom: 1px solid #ddd; position: sticky; top: 0; }
+.topo .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; }
+.logo { font-weight: bold; text-decoration: none; color: #111; }
+.menu a { margin-left: 12px; text-decoration: none; color: #111; font-size: 15px; }
+h1 { margin: 18px 0; font-size: 24px; }
+p, li { margin: 10px 0; font-size: 15px; }
+form label { display: block; margin: 10px 0; }
+input[type="text"], input[type="email"], textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+button { padding: 8px 12px; border: none; background: #0a57a4; color: #fff; border-radius: 4px; cursor: pointer; }
+.rodape { margin-top: 20px; padding: 12px 0; text-align: center; background: #f8f8f8; border-top: 1px solid #eee; color: #333; }
+@media (max-width:600px) {
+  .topo .container { flex-direction: column; gap: 8px; }
+  .menu a { display: inline-block; margin: 6px 6px 0 0; }
+}
